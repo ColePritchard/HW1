@@ -1,0 +1,30 @@
+$fn=64;
+union(){
+	translate([5,12,4])
+	cylinder(h=5,r1=2,r2=2);
+	translate([5,-12,4])
+	cylinder(h=5,r1=2,r2=2);
+	difference(){
+		difference(){
+			rotate([45,0,0])
+			cube([30,30,30], center=true);
+			translate([0,0,-25])
+			cube([50,50,50], center = true);
+			translate([0,-30,21.2132])
+			rotate([0,45,0])
+			cube([50,50,50]);
+			translate([-13,-30,10])
+			cube([2,50,50]);
+			translate([-8,-30,10])
+			cube([2,50,50]);
+			translate([-3,-30,10])
+			cube([2,50,50]);
+		}
+		translate([9,0,-10])
+		cylinder(h=35,r1=5,r2=5);
+		translate([5,12,4])
+		cylinder(h=10,r1=3,r2=3);
+		translate([5,-12,4])
+		cylinder(h=10,r1=3,r2=3);
+	}
+}

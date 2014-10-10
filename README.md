@@ -1,0 +1,1 @@
+This project was just an exercise in openScad, trying to get used to the coding interface of the software. I was messing around with difference and union mostly.
